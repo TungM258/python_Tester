@@ -1,0 +1,60 @@
+
+1. Cài đặt Git và Git Bash
+
+  Tải và cài Git từ: https://git-scm.com/
+
+   Khi cài đặt xong, bạn có thể mở Git Bash.
+
+2. Cấu hình Git lần đầu
+   git config --global user.email "yen.87nguyen@gmail.com"
+   git config --global user.name "yen-gifbegin"
+3. Clone repository từ GitHub về máy.
+   git clone https://github.com/TungM258/python_Tester
+   cd python_Tester
+4. Thêm/Sửa/Xoá file trong dự án
+    Bạn có thể chỉnh sửa file bằng bất kỳ editor nào (VS Code, Sublime, v.v.)
+5. Kiểm tra trạng thái thay đổi
+   git status
+6. Pull code mới nhất từ GitHub về (tránh conflict)
+   git pull origin main
+     #Hoặc master, tùy nhánh chính của bạn.
+7. Add file đã chỉnh sửa vào Git
+    git add .
+   Hoặc nếu muốn add file cụ thể:
+    git add tên-file
+8. Commit với message mô tả
+    git commit -m "Mô tả thay đổi"
+9. Push code lên GitHub
+      git push origin main
+
+10. Kiểm tra các branch có trên remote
+  git fetch
+  git branch -r
+  #Lệnh này sẽ hiển thị danh sách tất cả các branch đang có trên GitHub (origin/branch-name).
+11. Pull branch về máy
+  git checkout -b tên-branch origin/tên-branch
+  ví du: git checkout -b dev origin/dev
+ # Giải thích:
+     -b dev: tạo branch mới tên dev trên máy local.
+     origin/dev: lấy dữ liệu từ branch dev trên GitHub.
+12 Sau này muốn pull cập nhật mới của branch đó:
+    git pull origin tên-branch
+    git pull origin dev
+13. Kiểm tra bạn đang ở branch nào:
+   git branch
+14. Nếu bạn chỉ muốn pull mà klong chuyển branch, thì có thể fetch và merge như sau:
+   git fetch origin tên-branch
+   git merge origin/tên-branch
+15. Push branch lần đầu lên GitHub
+   Nếu bạn đang ở branch muốn push (kiểm tra bằng git branch), dùng lệnh
+   git push -u origin tên-branch
+   -u (hoặc --set-upstream) giúp Git ghi nhớ remote branch này, để lần sau bạn chỉ cần dùng git push hoặc git pull mà không cần ghi rõ tên branch nữa.
+16. Push các thay đổi sau này
+   git push
+17. Tạo branch mới rồi push (nếu cần)
+   git checkout -b tên-branch
+.
+18. CLone branch 
+
+git clone --branch Yen_branch --single-branch https://github.com/TungM258/python_Tester
+
