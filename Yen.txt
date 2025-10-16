@@ -1,0 +1,51 @@
+git config --global user.email "yen.87nguyen@gmail.com"
+git config --global user.name "yen-gifbegin"
+
+
+
+
+1. git branch
+2. git checkout ...
+3. git add Yentest.txt -m
+4. git commit "Upload new file" -m
+5. git config --global user.email "yen.87nguyen@gmail.com"
+6. git config --global user.name "yen-gifbegin"
+7. git push
+
+
+
+1. git checkout ...
+
+
+git clone https://github.com/TungM258/python_Tester
+cd python_Tester
+
+
+
+1. Cài đặt Git và Git Bash
+
+Tải và cài Git từ: https://git-scm.com/
+
+Khi cài đặt xong, bạn có thể mở Git Bash.
+
+2. Cấu hình Git lần đầu
+git config --global user.name "Tên của bạn"
+git config --global user.email "email@example.com"
+3. Clone repository từ GitHub về máy.
+git clone https://github.com/username/tên-repo.git
+cd tên-repo
+4. Thêm/Sửa/Xoá file trong dự án
+Bạn có thể chỉnh sửa file bằng bất kỳ editor nào (VS Code, Sublime, v.v.)
+5. Kiểm tra trạng thái thay đổi
+git status
+6. Pull code mới nhất từ GitHub về (tránh conflict)
+git pull origin main
+ #Hoặc master, tùy nhánh chính của bạn.
+7. Add file đã chỉnh sửa vào Git
+git add .
+Hoặc nếu muốn add file cụ thể:
+git add tên-file
+8. Commit với message mô tả
+git commit -m "Mô tả thay đổi"
+9. Push code lên GitHub
+git push origin main
